@@ -10,6 +10,6 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        Toast.make(this,"Hello",Toast.LengthLong).show();
+        //Toast.make(this,"Hello",Toast.LengthLong).show();
     }
 }
