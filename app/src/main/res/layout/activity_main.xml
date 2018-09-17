@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context="com.example.ss00576773.terumomodel.MainActivity">
+<android.support.v7.widget.CardView
+    app:cardCornerRadius="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="25sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="35dp"
+        android:text="Subscription"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"/>
+
+</android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardCornerRadius="20dp"
+        android:layout_weight="1">
+        <RadioGroup
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_marginTop="20dp"
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:text="Pre Paid (10Rs - 100 trails)"
+            android:textSize="20sp"
+            android:layout_marginLeft="25dp"/>
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="25dp"
+            android:textSize="20sp"
+            android:text="Post Paid (1Rs - 10 trails)" />
+        </RadioGroup>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"
+                android:text="Used"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_marginTop="20dp"
+                android:inputType="textPersonName"
+                android:hint="Count" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        app:cardCornerRadius="20dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"
+                android:text="Available"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:layout_marginTop="20dp"
+                android:inputType="textPersonName"
+                android:hint="Count" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="131dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button"
+            android:text="LOGOUT" />
+    </android.support.v7.widget.CardView>
+</LinearLayout>
